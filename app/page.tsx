@@ -22,7 +22,7 @@ export default async function IndexPage() {
           Aventuri din Muntii Nostrii
         </h1>
         <h3 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-          cu tovarasii mei
+          cu tovarasii meiii
         </h3>
       </div>
 
