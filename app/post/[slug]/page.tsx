@@ -39,16 +39,15 @@ export default async function SlugPage({
         <div className="space-y-1 text-center">
           <div className="space-y-10">
             <div>
+              <div>
+                <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14 pb-3">
+                  {data.title}
+                </h1>
+              </div>
               <p className="text-base font-medium leading-6 text-teal-500">
                 {new Date(data._createdAt).toISOString().split("T")[0]}
               </p>
             </div>
-          </div>
-
-          <div>
-            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
-              {data.title}
-            </h1>
           </div>
         </div>
       </header>
