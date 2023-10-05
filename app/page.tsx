@@ -20,17 +20,17 @@ export default async function IndexPage() {
   if (!data) return <div>Loading...</div>;
 
   return (
-    <div className=" divide-gray-200 dark:divide-gray-700">
+    <div className=" divide-gray-200 dark:divide-gray-700 w-full">
       <div className="space-y-2 pt-6 pb-8 md:space-y-5">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-          Trekking Journal for eSol
+          Trekking Journal
         </h1>
       </div>
 
-      <ul style={{ columnCount: 2 }}>
+      <ul className="">
         {data.map((post) => (
           <li key={post._id} style={{ display: "block" }} className="py-4">
-            {/* <article className="">
+            <article className="">
               <Link
                 href={`/post/${post.slug.current}`}
                 prefetch
@@ -59,9 +59,9 @@ export default async function IndexPage() {
                   </div>
                 </div>
               </Link>
-            </article> */}
+            </article>
 
-            <article className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            {/* <article className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <Link href={`/post/${post.slug.current}`} prefetch className="">
                 <Image
                   className="rounded-t-lg"
@@ -86,7 +86,7 @@ export default async function IndexPage() {
                   </div>
                 </div>
               </Link>
-            </article>
+            </article> */}
           </li>
         ))}
       </ul>

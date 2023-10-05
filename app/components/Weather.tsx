@@ -24,17 +24,14 @@ export default function Weather() {
     } catch (err) {
       console.log(err);
     }
-  }
-
-  useEffect(() => {
-    getWeatherData();
-  }, []);
+  } 
 
   return (
     <div>
-      <img src={"//http://openweathermap.org/img/wn/" + weather.weather[0].icon + "@4x.png"} width={100}  alt="" />
+      {/* <img src={"//http://openweathermap.org/img/wn/" + weather.weather[0].icon + "@4x.png"} width={100}  alt="" /> */}
       <div>{weather.name}</div>
       <div>{weather.main.temp} &deg;C</div>
+      <button onClick={getWeatherData}></button>
     </div>
   );
 }
