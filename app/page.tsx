@@ -3,12 +3,13 @@ import { Post } from "./lib/interface";
 import { client } from "./lib/sanity";
 import { urlFor } from "./lib/sanityImageUrl";
 import Image from "next/image";
-import Weather from "./components/Weather";
 
+export const revalidate = 0;
+export const fetchCache = "force-no-store";
+export const dynamic = "force-dynamic";
 async function getData() {
   const query = `*[_type == "post"]`;
-
-  const data = await client.fetch(query, { revalidate: 0 });
+  const data = await client.fetch(query, { cache: "no-store" });
 
   return data;
 }
