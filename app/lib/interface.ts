@@ -3,6 +3,7 @@ export interface Post {
   overview: string;
   content: any;
   _id: string;
+  image: string;
   slug: {
     current: string;
   };

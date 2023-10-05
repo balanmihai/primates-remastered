@@ -1,3 +1,4 @@
+import Weather from "@/app/components/Weather";
 import { Post } from "@/app/lib/interface";
 import { client } from "@/app/lib/sanity";
 import { urlFor } from "@/app/lib/sanityImageUrl";
@@ -7,7 +8,7 @@ import Image from "next/image";
 async function getData(slug: string) {
   const query = `*[_type == "post" && slug.current == "${slug}"][0]`;
 
-  const data = await client.fetch(query);
+  const data = await client.fetch(query,);
 
   return data;
 }
@@ -51,7 +52,6 @@ export default async function SlugPage({
           </div>
         </div>
       </header>
-
       <div className="divide-y divide-gray-200 pb-7 dark:divide-gray-700 xl:divide-y-0">
         <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
           <div className="prose max-w-none pb-8 pt-10 dark:prose-invert prose-lg">

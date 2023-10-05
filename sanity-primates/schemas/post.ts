@@ -14,6 +14,14 @@ export default {
       title: 'Overview',
     },
     {
+      name: 'image',
+      type: 'image',
+      title: 'Main Image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
