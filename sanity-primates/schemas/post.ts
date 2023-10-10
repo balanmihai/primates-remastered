@@ -30,6 +30,12 @@ export default {
       },
     },
     {
+      name: 'crew',
+      type: 'array',
+      title: 'Crew',
+      of: [{type: 'string'}],
+    },
+    {
       name: 'content',
       type: 'array',
       title: 'Content',
