@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+@font-face { 
+  font-family: "jang-black"; 
+  src: url('./fonts/JANGKUY-BlackExpanded.ttf'); 
+  font-weight: normal; 
+  font-style: normal; 
+} 
+  
+@font-face { 
+  font-family: "jang-bold"; 
+  src: url('./fonts/JANGKUY-BoldExpanded.ttf'); 
+  font-weight: bold; 
+  font-style: normal; 
+} 
+  
+@font-face { 
+  font-family: "jang-regular"; 
+  src: url('./fonts/JANGKUY-RegularExpanded.ttf'); 
+  font-weight: normal; 
+  font-style: italic; 
+}
