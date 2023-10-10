@@ -4,6 +4,7 @@ export interface Post {
   content: any;
   _id: string;
   image: string;
+  category: string;
   crew: Array<string>;
   slug: {
     current: string;

@@ -1,6 +1,7 @@
+"use client";
 import Link from "next/link";
 import Themebutton from "./ThemeButton";
-import style from "../styles/Navbar.module.scss";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Navbar() {
   return (
@@ -10,8 +11,14 @@ export default function Navbar() {
           <div className="flex justify-between items-center w-full">
             <Link href="/">
               <h1 className="text-2xl font-medium">
-                <span className={style.logo}>
-                  <span className="text-teal-500">Primates</span>
+                eSol
+                <span className="text-teal-500">
+                  {" "}
+                  <TypeAnimation
+                    sequence={["Hikes", 2000, "Bikes", 2000, "Sails", 2000]}
+                    speed={25}
+                    repeat={Infinity}
+                  />
                 </span>
               </h1>
             </Link>

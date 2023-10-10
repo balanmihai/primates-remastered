@@ -30,6 +30,18 @@ export default {
       },
     },
     {
+      title: 'Category',
+      name: 'category',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'Hike', value: 'Hike'},
+          {title: 'Sail', value: 'Sail'},
+          {title: 'Bike', value: 'Bike'},
+        ],
+      },
+    },
+    {
       name: 'crew',
       type: 'array',
       title: 'Crew',
