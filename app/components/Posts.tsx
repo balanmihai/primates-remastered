@@ -15,7 +15,7 @@ export const Posts = ({ allPosts }: Props) => {
       <Buttons setFilteredPosts={setFilteredPosts} allPosts={allPosts} />
       <ul className=" w-full pb-10">
         {filteredPosts.map((post) => (
-          <Card post={post} />
+          <Card key={post._id} post={post} />
         ))}
       </ul>
     </div>

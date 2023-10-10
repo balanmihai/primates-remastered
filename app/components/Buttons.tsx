@@ -13,8 +13,9 @@ export const Buttons = ({ setFilteredPosts, allPosts }: Props) => {
 
   return (
     <div className="flex gap-6 pb-10">
-      {categories.map((category: string) => (
+      {categories.map((category: string, index) => (
         <button
+          key={index}
           className="rounded bg-teal-500 px-10 py-4 text-md font-semibold text-white shadow-sm hover:bg-white hover:text-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           onClick={() =>
             setFilteredPosts(
