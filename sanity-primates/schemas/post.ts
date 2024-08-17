@@ -36,7 +36,8 @@ export default {
       options: {
         list: [
           {title: 'Hike', value: 'Hike'},
-          {title: 'Sail', value: 'Sail'},
+          {title: 'Mountaineering', value: 'Mountaineering'},
+          {title: 'Run', value: 'Run'},
           {title: 'Bike', value: 'Bike'},
         ],
       },
