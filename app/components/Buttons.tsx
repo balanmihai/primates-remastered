@@ -26,7 +26,12 @@ export const Buttons = ({ setFilteredPosts, allPosts }: Props) => {
           {category}
         </button>
       ))}
-      <button onClick={() => setFilteredPosts(allPosts)}>All</button>
+      <button
+        className="rounded border-teal-500 border-4 px-10 py-4 text-md font-semibold text-white shadow-sm hover:bg-white hover:text-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        onClick={() => setFilteredPosts(allPosts)}
+      >
+        All
+      </button>
     </div>
   );
 };
